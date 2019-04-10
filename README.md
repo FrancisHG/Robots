@@ -5,8 +5,9 @@ https://github.com/neilkennedy/coding-challenge-martian-robots/blob/master/readm
 # Deliverables
 ## Improvements
 These are sub-tasks which could improve the application, but was unable to complete due to time constraints.
-1. Determine rotations in RobotHeading by tracking a numeric value corresponding to the RobotHeading or use a Doublely Linked List. I started with this approach, but it seemed overengineered for a first pass
-2. Better abstraction of RobotsCollection.AddRobots logic
+1. [4] Determine rotations in RobotHeading by tracking a numeric value corresponding to the RobotHeading or use a Doublely Linked List. I started with this approach, but it seemed overengineered for a first pass
+2. [2] Better abstraction of RobotsCollection.AddRobots logic
+3. [2] Build user interface
 
 ## Assumptions
 1. I assumed `03 W` is bad data and corrected this to `0 3 W` for automated tests. There should be a space in order to parse properly. "Smarter parsing" could be an improvement task if this is good data, allowing for optional parameters (ie x = 3, y = some default value, bearing = W) I am still having difficulty getting this working after enhancing parsing logic assuming the first numeric value is X.
@@ -18,7 +19,7 @@ These are sub-tasks which could improve the application, but was unable to compl
 I used an MVC approach to designing this application. All parsing and business logic is performed in the Controller namespace. Assumptions were minimized due to heavy use of Configuration settings.
 
 ## Deliverable Time
-I spent about 1 hour planning and 4 hours implementing this solution. The total work time is 5 hours. I estimate implementing improvements and completing a UI would take another 2 hours.
+So far about 4 hours of time have been spent completing this project. A good architecture is in place to complete remaining tasks, which I have estimated at 8 additional hours of work. See Improvements list for suggestions and time estimates.
 
 # Programming Problem
 ## Introduction
