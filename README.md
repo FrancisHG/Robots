@@ -2,6 +2,14 @@
 
 https://github.com/neilkennedy/coding-challenge-martian-robots/blob/master/readme.md
 
+# Deliverables
+## Improvements
+These are sub-tasks which could improve the application, but was unable to complete due to time constraints.
+1. Determine RobotHeading by tracking a numeric value corresponding to the RobotHeading. I started with this approach, but negatives would need an offset and the overall concept seemed overengineered for a first pass.
+
+## Assumptions
+1. I assumed `03 W` is bad data and corrected this to `0 3 W` for automated tests. There should be a space in order to parse properly. "Smarter parsing" could be an improvement task if this is good data, allowing for optional parameters (ie x = 3, y = some default value, bearing = W)
+
 # Programming Problem
 ## Introduction
 Design & implement a solution using C#/ASP.Net MVC or ASP.Net core to solve the problem described below. The objective of the problem is to allow the candidate to demonstrate their design principles and development skills. The problem is provided with sample data to be used for testing and the candidate should be able to demonstrate their solution using the supplied data in the form of a unit test or a simple user interface.
