@@ -9,10 +9,16 @@ These are sub-tasks which could improve the application, but was unable to compl
 2. Better abstraction of RobotsCollection.AddRobots logic
 
 ## Assumptions
-1. I assumed `03 W` is bad data and corrected this to `0 3 W` for automated tests. There should be a space in order to parse properly. "Smarter parsing" could be an improvement task if this is good data, allowing for optional parameters (ie x = 3, y = some default value, bearing = W)
+1. I assumed `03 W` is bad data and corrected this to `0 3 W` for automated tests. There should be a space in order to parse properly. "Smarter parsing" could be an improvement task if this is good data, allowing for optional parameters (ie x = 3, y = some default value, bearing = W) I am still having difficulty getting this working after enhancing parsing logic assuming the first numeric value is X.
 2. `The maximum value for any coordinate is 50.` The design I implemented does not have a ceiling for compatible coordinate values, therefore I do not believe a handle (error or warning) is necessary for this condition.
 3. `All instruction strings will be less than 100 characters in length.` The design I implemented does not have a ceiling for number of compatible instruction characters, therefore I do not believe a handle (error or warning) is necessary for this condition.
 4. Assuming all bounded parameters are inclusive (ie if a Robot is on 0,0 they are **not** outside the grid)
+
+## Architecture
+I used an MVC approach to designing this application. All parsing and business logic is performed in the Controller namespace. Assumptions were minimized due to heavy use of Configuration settings.
+
+## Deliverable Time
+I spent about 1 hour planning and 4 hours implementing this solution. The total work time is 5 hours. I estimate implementing improvements and completing a UI would take another 2 hours.
 
 # Programming Problem
 ## Introduction
