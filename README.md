@@ -5,10 +5,14 @@ https://github.com/neilkennedy/coding-challenge-martian-robots/blob/master/readm
 # Deliverables
 ## Improvements
 These are sub-tasks which could improve the application, but was unable to complete due to time constraints.
-1. Determine RobotHeading by tracking a numeric value corresponding to the RobotHeading. I started with this approach, but negatives would need an offset and the overall concept seemed overengineered for a first pass.
+1. Determine rotations in RobotHeading by tracking a numeric value corresponding to the RobotHeading or use a Doublely Linked List. I started with this approach, but it seemed overengineered for a first pass
+2. Better abstraction of RobotsCollection.AddRobots logic
 
 ## Assumptions
 1. I assumed `03 W` is bad data and corrected this to `0 3 W` for automated tests. There should be a space in order to parse properly. "Smarter parsing" could be an improvement task if this is good data, allowing for optional parameters (ie x = 3, y = some default value, bearing = W)
+2. `The maximum value for any coordinate is 50.` The design I implemented does not have a ceiling for compatible coordinate values, therefore I do not believe a handle (error or warning) is necessary for this condition.
+3. `All instruction strings will be less than 100 characters in length.` The design I implemented does not have a ceiling for number of compatible instruction characters, therefore I do not believe a handle (error or warning) is necessary for this condition.
+4. Assuming all bounded parameters are inclusive (ie if a Robot is on 0,0 they are **not** outside the grid)
 
 # Programming Problem
 ## Introduction
