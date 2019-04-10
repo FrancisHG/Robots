@@ -7,10 +7,10 @@ https://github.com/neilkennedy/coding-challenge-martian-robots/blob/master/readm
 Design & implement a solution using C#/ASP.Net MVC or ASP.Net core to solve the problem described below. The objective of the problem is to allow the candidate to demonstrate their design principles and development skills. The problem is provided with sample data to be used for testing and the candidate should be able to demonstrate their solution using the supplied data in the form of a unit test or a simple user interface.
 ## Expected Outcome
 On completion of this task, we expect to receive:
-• An architecture & design overview describing your application design of the entire solution. Specifically we are interested in seeing:
-• List of assumptions that you made
-• An estimate of how long this would take if you were asked to build the entire solution for a customer
-• Source code (including any automated tests)
+- An architecture & design overview describing your application design of the entire solution. Specifically we are interested in seeing:
+- List of assumptions that you made
+- An estimate of how long this would take if you were asked to build the entire solution for a customer
+- Source code (including any automated tests)
 ## Problem: Martian Robots
 ### The Problem
 The surface of Mars can be modelled by a rectangular grid around which robots are able to move according to instructions provided from Earth. You are to write a program that determines each sequence of robot positions and reports the final position of the robot.
